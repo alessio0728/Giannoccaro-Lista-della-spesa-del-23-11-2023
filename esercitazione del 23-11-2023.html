@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <center>
+        <h1>LISTA DELLA SPESA</h1>
+    </center>
+
+    <center>
+        <h2 style="color: red;">MOSTRA PRODOTTI</h2>
+    </center>
+
+    <center>
+        <h3>
+            <script>
+
+                var lista_della_spesa = Array("pane", "latte", "zucchero", "sale", "formaggi",);
+
+                document.write(lista_della_spesa)
+
+
+            </script>
+        </h3>
+    </center>
+
+    <br><br>
+
+    <center>
+        <h2 style="color: red;">AGGIUNGERE ELEMENTI</h2>
+    </center>
+
+    <center>
+        <h3>
+            <script>
+
+                var lista_della_spesa = Array("pane", "latte", "zucchero", "sale", "formaggi",);
+                var lista_nuova = prompt('Aggiungi alla lista della spesa' + [""]);
+
+                lista_della_spesa.push(lista_nuova);
+
+                document.write(lista_della_spesa)
+
+            </script>
+        </h3>
+    </center>
+
+
+
+
+
+
+
+
+
+
+
+
+    <center>
+        <h2 style="color: red;">LISTA ORDINATA</h2>
+    </center>
+
+    <center>
+        <h3>
+            <script>
+                var lista_della_spesa = new Array("pane", "latte", "zucchero", "sale", "formaggi",);
+
+                document.write(lista_della_spesa.sort())
+
+
+            </script>
+    </center>
+    </h3>
+
+    <!--
+
+    <script>
+
+        let magazzino = 100
+
+        let scelta = parseInt(prompt ("BENVENUTO ALLE DELIZIE DEL FORNO \n\n N.1 Panini \n\n N.2 Pane \n\n N.3 Integrale "))
+
+        let compra = parseInt(prompt("PEZZI CHE DESIDERA COMPRARE"))
+
+        switch (scelta) {
+            case 1:
+
+            if (magazzino-compra >=0) {
+
+                magazzino=magazzino-compra
+
+                window.alert("ARRIVEDERCI E GRAZIE");
+
+                window.alert(" SCORTE RIMANENTI "  +  magazzino  +  " PEZZI ") 
+
+
+                
+            } else {
+
+                alert("Quantità non disponibile")
+                
+            }
+
+            case 2:
+
+if (magazzino-compra >=0) {
+
+    magazzino=magazzino-compra
+
+    window.alert("Torni a trovarci");
+
+    window.alert(" SCORTE RIMANENTI "  +  magazzino  +  " PEZZI ") 
+
+
+    
+} else {
+
+    alert("Quantità non disponibile")
+    
+}
+
+case 3:
+
+if (magazzino-compra >=0) {
+
+    magazzino=magazzino-compra
+
+    window.alert("BUONA MANGIATA");
+
+    window.alert(" SCORTE RIMANENTI "  +  magazzino  +  " PEZZI ") 
+    
+} else {
+
+    alert("Quantità non disponibile")
+    
+}
+
+            
+                
+                break;
+        
+            default:
+
+            alert("L'operazione non è supportata")
+                break;
+        }
+
+
+    </script>
+
+    -->
+
+</body>
+
+</html>
