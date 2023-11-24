@@ -30,10 +30,10 @@
         </h3>
     </center>
 
-    <br><br>
+    <br>
 
     <center>
-        <h2 style="color: red;">AGGIUNGERE ELEMENTI</h2>
+        <h2 style="color: aqua;">AGGIUNGERE ELEMENTI</h2>
     </center>
 
     <center>
@@ -41,7 +41,12 @@
             <script>
 
                 var lista_della_spesa = Array("pane", "latte", "zucchero", "sale", "formaggi",);
-                var lista_nuova = prompt('Aggiungi alla lista della spesa' + [""]);
+                var lista_nuova = prompt('Aggiungi alla lista della spesa');
+
+                for (let index = 0; index < 10; index++) {
+                    const element = Array[index];
+
+                }
 
                 lista_della_spesa.push(lista_nuova);
 
@@ -52,24 +57,14 @@
     </center>
 
 
-
-
-
-
-
-
-
-
-
-
     <center>
-        <h2 style="color: red;">LISTA ORDINATA</h2>
+        <h2 style="color: yellow;">LISTA ORDINATA</h2>
     </center>
 
     <center>
         <h3>
             <script>
-                var lista_della_spesa = new Array("pane", "latte", "zucchero", "sale", "formaggi",);
+                var lista_della_spesa = Array("pane", "latte", "zucchero", "sale", "formaggi",);
 
                 document.write(lista_della_spesa.sort())
 
@@ -78,83 +73,47 @@
     </center>
     </h3>
 
-    <!--
+    <center>
+        <h2 style="color: pink;">LISTA MODIFICATA</h2>
+    </center>
 
-    <script>
+    <center>
+        <h3>
+            <script>
 
-        let magazzino = 100
+                var lista_della_spesa = Array("pane", "latte", "zucchero", "sale", "formaggi",);
 
-        let scelta = parseInt(prompt ("BENVENUTO ALLE DELIZIE DEL FORNO \n\n N.1 Panini \n\n N.2 Pane \n\n N.3 Integrale "))
+                var lista_della_spesa = Map[
+                    { prodotto: "pane", marca: "pinco" },
+                    { prodotto: "latte", marca: "granarolo" },
+                    { prodotto: "zucchero", marca: "selex" },
+                    { prodotto: "sale", marca: "coop" },
+                    { prodotto: "formaggi", marca: "zeus" }]
 
-        let compra = parseInt(prompt("PEZZI CHE DESIDERA COMPRARE"))
-
-        switch (scelta) {
-            case 1:
-
-            if (magazzino-compra >=0) {
-
-                magazzino=magazzino-compra
-
-                window.alert("ARRIVEDERCI E GRAZIE");
-
-                window.alert(" SCORTE RIMANENTI "  +  magazzino  +  " PEZZI ") 
+                document.write(lista_della_spesa)
 
 
+            </script>
+    </center>
+
+    <center>
+        <h2 style="color: red;">ELIMINAZIONE LISTA DELA SPESA </h2>
+    </center>
+
+    <center>
+        <h3>
+            <script>
+
+                var lista_della_spesa = Array("pane" , "latte", "zucchero", "sale", "formaggi",);
                 
-            } else {
 
-                alert("Quantità non disponibile")
-                
-            }
+                document.write(lista_della_spesa.splice(0,3,5))
 
-            case 2:
+            </script>
+    </center>
 
-if (magazzino-compra >=0) {
+    </h3>
 
-    magazzino=magazzino-compra
-
-    window.alert("Torni a trovarci");
-
-    window.alert(" SCORTE RIMANENTI "  +  magazzino  +  " PEZZI ") 
-
-
-    
-} else {
-
-    alert("Quantità non disponibile")
-    
-}
-
-case 3:
-
-if (magazzino-compra >=0) {
-
-    magazzino=magazzino-compra
-
-    window.alert("BUONA MANGIATA");
-
-    window.alert(" SCORTE RIMANENTI "  +  magazzino  +  " PEZZI ") 
-    
-} else {
-
-    alert("Quantità non disponibile")
-    
-}
-
-            
-                
-                break;
-        
-            default:
-
-            alert("L'operazione non è supportata")
-                break;
-        }
-
-
-    </script>
-
-    -->
 
 </body>
 
